@@ -13,9 +13,9 @@ Express.get("/", (request, response) => {
     100
   );
   response.send(
-    `${add100Days.getDate()}-${
+    `${add100Days.getDate()}/${
       add100Days.getMonth() + 1
-    }-${add100Days.getFullYear()}`
+    }/${add100Days.getFullYear()}`
   );
 });
 
